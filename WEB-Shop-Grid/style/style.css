@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Anton", sans-serif;
+}
+
+ul {
+  list-style: none;
+  flex-direction: row;
+}
+a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  font-weight: 900;
+  font-size: 1rem; 
+}
+a:hover{
+  text-decoration-line: none;
+}
+span,
+h1,
+
+span {
+  color: rgb(80, 186, 221);
+}
+.korpica i{
+  color: white;
+}
+
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+
+.main-head {
+  /* display:flex; */
+  flex-direction: column;
+  
+}
+.main-head .brand {
+  flex: 3 1 5rem;
+  min-height: 10vh;
+  padding: 1rem 0rem;
+  background-color: rgb(224, 219, 219);
+  /* display: flex; */
+  align-items: center;
+}
+
+.brand .ikonice {
+  /* display:flex; */
+  flex: 1 1 1rem;
+  justify-content: space-around;
+}
+
+.brand .logo {
+  margin-left: 5rem;
+  flex: 3 1 7rem;
+}
+
+.main-head nav {
+  width: 100%;
+  /* background-color: rgb(80, 186, 221); */
+  min-height: 10vh;
+  padding: 0.5rem 0rem;
+  flex: 1 1 0.5rem;
+  flex-direction: row;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 1rem;
+  align-items: center;
+}
+
+.korpica {
+  flex: 1 1 1rem;
+  align-items: center;
+
+  justify-content: flex-end;
+}
+
+.total {
+  padding: 0 1rem;
+  color:white;
+}
+
+.gallery img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+  
+}
+
+.gallery {
+  display: grid;
+  min-height: 100vh;
+  width: 80%;
+  grid-template-areas:
+    "img1 img2 img3 img4"
+    "img5 img6 img7 img8"
+    "img9 img10 img11 img12"
+    ;
+  position: relative;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin:10% 10%;
+  
+}
+
+.img1 {
+  grid-area: img1;
+  
+}
+.img2 {
+  grid-area: img2;
+}
+.img3 {
+  grid-area: img3;
+}
+.img4 {
+  grid-area: img4;
+}
+.img5 {
+  grid-area: img5;
+}
+.img6 {
+  grid-area: img6;
+}
+.img7 {
+  grid-area: img7;
+}
+.img8 {
+  grid-area: img8;
+}
+.img9 {
+  grid-area: img9;
+}
+.img10 {
+  grid-area: img10;
+}
+.img11 {
+  grid-area: img11;
+}
+.img12 {
+  grid-area: img12;
+}

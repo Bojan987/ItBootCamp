@@ -1,0 +1,45 @@
+body {
+    background: #333;
+    color: #fff;
+  }
+  
+  .navbar {
+    border-bottom: #0F6494 3px solid;
+    opacity: 0.8;
+  }
+
+  #about{
+    background-image: linear-gradient(to bottom right, rgb(65, 9, 9), rgb(134, 6, 6));
+  }
+  img.slika{
+    border: rgb(78, 2, 2) 3px solid;
+    box-shadow: 0 0 10px rgb(255, 254, 254);
+    
+  }
+
+  #projects{
+    background-color: #94770F;
+  }
+
+  /* #gallery {
+    background-color: #943007;
+  } */
+
+  #education {
+    background-color:white ;
+  }
+
+  .progress{
+    margin-bottom: 20px;
+  }
+
+  #contact{
+    background-image: linear-gradient(to bottom right, rgb(65, 9, 9), rgb(134, 6, 6));
+  }
+
+  @media only screen and (max-width: 2300px) {
+    .slika{
+      width: 200px;
+      height: 200px;
+    }
+  }

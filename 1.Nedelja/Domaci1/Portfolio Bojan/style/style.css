@@ -1,6 +1,7 @@
 body {
     background: #333;
     color: #fff;
+    animation: opening 1s ease-in-out forwards;
   }
   
   .navbar {
@@ -41,5 +42,14 @@ body {
     .slika{
       width: 200px;
       height: 200px;
+    }
+  }
+
+  @keyframes opening {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
     }
   }

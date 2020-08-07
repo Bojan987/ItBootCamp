@@ -1,0 +1,26 @@
+#dugme1{
+ margin: 10rem 10rem 10rem 10rem;
+}
+
+#dugme2{
+    margin: 10rem 10rem 10rem 10rem;
+}
+
+.par{
+    margin-top: 10rem;
+}
+
+.par2 {
+    border-color: green;
+    background-color: rgb(227, 253, 188);
+    display: inline-block;
+}
+
+.par3 {
+    border-color: rgb(104, 32, 10);
+    background-color: rgb(255, 32, 32);
+    color: white;
+    width: 10rem;
+    height: 3rem;
+    
+}

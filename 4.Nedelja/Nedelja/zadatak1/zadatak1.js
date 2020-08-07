@@ -1,5 +1,5 @@
 // Kod od srede
-
+//              *************** SRECAN PREGLED  :)))))) *************
 function Pokemon(ime, vrsta, sposobnosti, karakteristike, slika) {
   (this.ime = ime),
     (this.vrsta = vrsta),
@@ -126,8 +126,12 @@ const prikaziPokemone = document.querySelector("#prikaz");
 const prikaziNajjacegPokemona = document.querySelector("#pobednik");
 const wrapper = document.querySelector(".wrapper");
 
+
+
 wrapper.addEventListener("click", (e) => {
+  console.log(e.target)
   if (e.target === prikaziPokemone) {
+    
     if (contentWrapper.style.display === "none")
       contentWrapper.style.display = "flex";
     else contentWrapper.style.display = "none";
@@ -198,7 +202,7 @@ let k = pokemons.forEach((a) => {
   let btn1 = document.createElement("button");
   btn1.classList.add("btn", "btn-block", "btn-primary", "btn-" + i);
   btn1.textContent = "IZABERI POKEMONA";
-
+ 
   content.append(ul2, btn1);
   ul2.append(li3, li4, li5);
 
@@ -323,3 +327,6 @@ ul3.append(li6, li7);
 ul4.append(li8, li9, li10);
 
 content1.append(img1, p3, p4, ul3, ul4);
+
+contentWrapper.style.display = "none"
+content1.style.display = "none"

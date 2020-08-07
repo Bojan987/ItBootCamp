@@ -13,6 +13,7 @@ h1{
 .wrapper{
     display: flex;
     margin-top: 4rem;
+    
 
        
     
@@ -31,8 +32,6 @@ h1{
     margin: 0;
     display: flex;
     flex-direction: column;
-    /* align-items: flex-start;     */
-    /* align-self: flex-start; */
     flex-grow: 1;
     width: 50%;
     
@@ -51,17 +50,12 @@ h1{
 }
 
 
-.contentWrapper,
-.contentWrapper1 {
-    display: flex;
-    flex-wrap: wrap;
-   
-   }
+
 
 .contentWrapper{
-    display: flex;
+   
     flex-direction: row;
-       display:none;
+    display:none;
        
    }
 
@@ -69,17 +63,18 @@ h1{
 {
     padding: 20px 10px;
     display: none;
-    /* overflow: hidden; */
+    
     align-self: center;
     flex-direction: row;
     flex-grow: 1;
     
 }
 .content{
+    display :none;
     display: flex;
     flex-direction: column;
     padding: 20px 10px;
-    /* overflow: hidden; */
+   
     width: 210px;
     
     
@@ -121,3 +116,4 @@ h1{
     display: none;
     /* width:210px; */
 }
+

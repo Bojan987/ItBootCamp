@@ -133,13 +133,13 @@ wrapper.addEventListener("click", (e) => {
   if (e.target === prikaziPokemone) {
     
     if (contentWrapper.style.display === "none")
-      contentWrapper.style.display = "flex";
-    else contentWrapper.style.display = "none";
+      contentWrapper.style.display = "flex"
+    else contentWrapper.style.display = "none"
   }
 
   if (e.target === prikaziNajjacegPokemona) {
-    if (content1.style.display === "none") content1.style.display = "block";
-    else content1.style.display = "none";
+    if (content1.style.display === "none") content1.style.display = "block"
+    else content1.style.display = "none"
   }
 });
 

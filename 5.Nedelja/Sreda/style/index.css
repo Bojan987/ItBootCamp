@@ -1,0 +1,67 @@
+
+
+html,body{
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+  }
+
+  h1{
+    text-align: center;
+    margin-top: 2rem;
+}
+ #prikaz {
+     padding: 0.5rem;
+     flex:1;
+ }
+ #pobednik{
+    padding: 0.5rem;
+     flex: 1;
+ }
+ .contentWrap{
+    display: flex;
+    }
+.prikazWrap{
+    height: 200px;
+    width: 50%;
+    
+   
+}
+.pobednikWrap{
+
+
+position: absolute;
+top: 100px;
+right: 0px;
+height: 200px;
+width: 50%;
+}
+
+.najjaci{
+    position: absolute;
+    top: 0.5rem;
+    left: 25%
+}
+
+.poks{
+    
+    flex:1;
+    margin: 0.5rem;
+    width: 150px;
+   
+}
+
+.card:hover{
+    background-color: rgb(209, 194, 194);
+}
+.card {
+    width: 210px;
+    height: 100px;
+   
+    
+}
+.card-img-top{
+    background-color: rgb(243, 229, 211);
+}
+

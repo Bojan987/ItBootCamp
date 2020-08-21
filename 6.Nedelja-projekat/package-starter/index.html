@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/index.css">
+    <title>Projekat Nedeja 6</title>
+</head>
+<body>
+   
+
+    <div class="container total d-flex">
+        
+        <h1 class="display-6">Dostupan budzet u godini:</h1>
+        <h1 class="display-3 totalBudget">0</h1>
+        <div class="container totalPrihod">
+            <h5> <strong>Prihodi</strong> </h5>
+            <h4 class="ukupanPrihod"> 0</h4>
+        </div>
+        <!-- <div class="wrapper d-flex"> -->
+            <div class="totalRashod">
+                <h5 class="h5rashodi"><strong>Rashodi</strong> </h5>
+                <div class="iznos d-flex">
+                    <h4 class="ukupanRashod"> 0</h4>
+                    <span class="badge badge-dark badgeTotal align-middle"><h6 class="align-middle totalPerc">0%</h6></span>  
+                </div>
+            </div>
+            
+
+        <!-- </div> -->
+     
+     </div>
+    
+    
+        <form class="form-inline  forma">
+            
+        <select class="form-control selekcija" id="selectBox">
+            <option value="income">Income</option>
+            <option value="expense">Expences</option>
+        </select>
+            <input class="form-control mr-2 " type="text" id="description" placeholder="Enter description">
+            <input class="form-control mr-2 " type="text" id="amount" placeholder="Enter amount">
+            <button type="button" class="btn btn-dark dugme " >Ok</button>
+        </form>
+
+        <div class="container d-flex sekcija">
+            <div class="container incomeContainer">
+                <ul class="list-group  list-group-flush mb-5 ulistaInc">
+                    <div class="prihodiTitle"><h4 >PRIHODI </h4></div> 
+                    <!-- <li class="list-group-item li-element">
+                        <h5>tekst</h5>
+                        <div class="innerDiv"> 
+                            <h5>value</h5>
+                            <button class="badge badge-danger">X</button>
+                        </div>
+                       
+                    </li>
+
+                    <li class="list-group-item li-element">My List Item One
+                        
+                        <button class="badge badge-danger">X</button>
+                    </li> -->
+                </ul>
+
+             
+
+
+            </div>
+
+            <div class="container expenseContainer">
+                <ul class="list-group list-group-flush mb-5 ulistaExp">
+                    <div class="rashodiTitle"><h4>RASHODI</h4></div> 
+                    <!-- <li class="list-group-item li-element">
+                        <h5>tekst</h5>
+                        <div class="innerDiv">
+                            <h5>value</h5>
+                            <span class="badge badge-primary">30</span>
+                            <button class="badge badge-danger">X</button>
+                        </div>
+                       
+                    </li>
+
+
+                    <li class="list-group-item li-element">My List Item One
+                        <span class="badge badge-primary">30</span>
+                        <button class="badge badge-danger">X</button>
+                    </li> -->
+                </ul>
+
+              
+                
+
+            </div>
+
+
+        </div>
+   
+        
+</body>
+</html>
+
+

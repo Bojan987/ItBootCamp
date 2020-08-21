@@ -1,0 +1,105 @@
+
+.total {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/equations-wallpaper-preview.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-attachment: fixed;
+    color: seashell;
+}
+.forma{
+    justify-content: center;
+}
+
+.selekcija{
+    margin: 10px;
+}
+.totalPrihod,
+.totalRashod{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+    width: 20rem;
+    margin-bottom: 20px;
+    
+    
+}
+.totalPrihod{
+    background-color: rgba(41, 136, 61, 0.8);
+}
+
+.totalRashod{
+    background-color: rgba(250, 1, 1, 0.6);
+}
+#description,
+#amount{
+    margin: 10px;
+}
+
+.badge-danger {
+    display: none;
+    margin-left: 5%;
+    height: 30px;
+    
+}
+
+.badge-primary{
+    margin-left: 15px;
+    justify-self: center;
+    align-self: center;
+    width: 60px;
+    
+}
+.badgeTotal{
+    width: 60px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.li-element{
+    display: flex;
+    justify-content: space-between;
+}
+.innerDivInc,
+.innerDivExp{
+    display: flex;
+}
+.li-element:hover .badge-danger{
+display: inline;
+
+}
+
+/* .expenseContainer{
+    border-left-style: outset;
+} */
+
+.wrapper{
+    align-items: center;
+    
+
+}
+.ukupanRashod{
+    margin-right: 5px;
+}
+.ukupanPrihod{
+    margin-right: 55px;
+}
+.rashodiTitle{
+    background-color: rgba(250, 1, 1, 0.8);
+    display: flex;
+    justify-content: space-around;
+    color: seashell;
+    
+}
+.prihodiTitle{
+    
+    background-color: rgba(41, 136, 61, 0.8);
+   display: flex;
+   justify-content: space-around;
+   color: seashell;
+}

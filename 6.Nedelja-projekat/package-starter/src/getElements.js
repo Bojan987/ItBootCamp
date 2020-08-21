@@ -11,6 +11,7 @@
       ukupanRashod: document.querySelector(".ukupanRashod"),
       ukupanBudzet: document.querySelector(".totalBudget"),
       totalPercentage: document.querySelector(".totalPerc"),
+      datum: document.querySelector(".datum")
     };
   };
 

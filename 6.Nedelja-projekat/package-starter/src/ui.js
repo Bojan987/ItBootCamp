@@ -149,4 +149,15 @@ let errorMsg = function (description, amount) {
   }
 };
 
+let datum = function(datum){
+
+  
+  let currentDate = new Date()
+  let month = currentDate.getMonth()
+  month++
+  datum.textContent = "Budzet za : " + currentDate.getDate() + "-" + month + "-" + currentDate.getFullYear()
+ 
+}
+datum(queryEl().datum)
+
 export { addToUI, updateSumUI, errorMsg, clearInput };

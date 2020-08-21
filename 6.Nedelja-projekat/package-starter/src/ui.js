@@ -12,14 +12,17 @@ let addToUI = function (
   let li = document.createElement("li");
   li.classList.add("list-group-item", "li-element");
   calcPerc();
-
+  let formatConfig = {minimumFractionDigits: 2}
+  let nfObject = new Intl.NumberFormat('de-DE',formatConfig) 
+  let output = nfObject.format(amount)
+  
   // za income - kreiram za svaki li element : h5-description , div-->h5 , button(sa id kao i svaki objekat u income nizu) i appendujem
-
+ 
   if (select === "income") {
     li.innerHTML = `  <h5>${description}</h5>`;
     let innerDivInc = document.createElement("div");
     innerDivInc.classList.add("innerDivInc");
-    innerDivInc.innerHTML = `<h5>+${amount}</h5>`;
+    innerDivInc.innerHTML = `<h5>+${output}</h5>`;
     let btnDel = document.createElement("button");
     btnDel.classList.add("badge", "badge-danger", "btnDel");
     btnDel.innerText = "X";
@@ -67,7 +70,7 @@ let addToUI = function (
     li.innerHTML = `  <h5>${description}</h5>`;
     let innerDivExp = document.createElement("div");
     innerDivExp.classList.add("innerDivExp");
-    innerDivExp.innerHTML = `<h5>-${amount}</h5>`;
+    innerDivExp.innerHTML = `<h5>-${output}</h5>`;
     var badgePerc = document.createElement("span");
     badgePerc.classList.add("badge", "badge-primary");
     badgePerc.textContent = 0;
@@ -116,10 +119,19 @@ let addToUI = function (
 
 // update UI za total income, Expense ,Budzet ,Procente
 let updateSumUI = function (totalInc, totalExp, totalBudget, totalPerc) {
-  totalInc.textContent = data.totalIncome;
-  totalExp.textContent = data.totalExpense;
-  totalBudget.textContent = data.totalBudget;
-  totalPerc.textContent = data.totalPercentage + "%";
+  let formatConfig = {minimumFractionDigits: 2}
+  let nfObject = new Intl.NumberFormat('de-DE',formatConfig) 
+  
+  
+  let totalIncomeFormated = nfObject.format(data.totalIncome)
+  let totalExpenseFormated = nfObject.format(data.totalExpense)
+  let totalBudgetFormated = nfObject.format(data.totalBudget)
+  let totalPercentageFormated = nfObject.format(data.totalPercentage)
+console.log(totalIncomeFormated)
+  totalInc.textContent = totalIncomeFormated;
+  totalExp.textContent = totalExpenseFormated;
+  totalBudget.textContent = totalBudgetFormated;
+  totalPerc.textContent = totalPercentageFormated + "%";
 
   // console.log(totalPerc)
 };

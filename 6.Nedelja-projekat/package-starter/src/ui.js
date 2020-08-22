@@ -61,7 +61,7 @@ let addToUI = function (
 
       // svakom elementu u node listi dodeljujem procenat u array-u procenata sa istim indexom
       niznode.forEach((el, idx) => {
-        el.textContent = calcPerc()[idx];
+        el.textContent = calcPerc()[idx] + '%';
       });
     });
   }
@@ -126,12 +126,12 @@ let updateSumUI = function (totalInc, totalExp, totalBudget, totalPerc) {
   let totalIncomeFormated = nfObject.format(data.totalIncome)
   let totalExpenseFormated = nfObject.format(data.totalExpense)
   let totalBudgetFormated = nfObject.format(data.totalBudget)
-  let totalPercentageFormated = nfObject.format(data.totalPercentage)
+  // let totalPercentageFormated = nfObject.format(data.totalPercentage)
 console.log(totalIncomeFormated)
   totalInc.textContent = totalIncomeFormated;
   totalExp.textContent = totalExpenseFormated;
   totalBudget.textContent = totalBudgetFormated;
-  totalPerc.textContent = totalPercentageFormated + "%";
+  totalPerc.textContent = data.totalPercentage + "%";
 
   // console.log(totalPerc)
 };

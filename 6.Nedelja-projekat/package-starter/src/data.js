@@ -38,9 +38,11 @@ class Income {
     if (select === "income") {
       newElement = new Income(description, amount, id);
       data.incomeArr.push(newElement);
+      id++
     } else if (select === "expense") {
       newElement = new Expense(description, amount, id);
       data.expenseArr.push(newElement);
+      id++
     }
   };  
   let updateSum = function () {
@@ -50,7 +52,7 @@ class Income {
     let ArrIncVal = data.incomeArr.map((a) => parseInt(a.amount));
     if (ArrIncVal.length > 0) {
       data.totalIncome = ArrIncVal.reduce((a, b) => a + b);
-      // console.log(data.totalIncome)
+      console.log(data.totalIncome)
     } else data.totalIncome = 0;
   
     //total expense 

@@ -41,7 +41,7 @@ let addToUI = function (
       btnDel.parentElement.parentElement.remove();
 
       data.incomeArr.splice(
-        data.incomeArr.findIndex((el) => el.id === e.target.id, 1)
+        data.incomeArr.findIndex((el) => el.id ===Number(e.target.id)),1
       );
       //kada obrise radim update svega u updateSum(prihod,rashod, budzet,procenat)
       updateSum();
@@ -95,7 +95,7 @@ let addToUI = function (
 
       btnDel.parentElement.parentElement.remove();
       data.expenseArr.splice(
-        data.expenseArr.findIndex((el) => el.id === e.target.id, 1)
+        data.expenseArr.findIndex((el) => el.id === Number(e.target.id) ),1
       );
       // update nakon brisanja objekta
       updateSum();

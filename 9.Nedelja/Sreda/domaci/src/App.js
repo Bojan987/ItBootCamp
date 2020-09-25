@@ -21,7 +21,7 @@ function App() {
       <div>
         <p>Hello</p>
         <Router>
-          <nav>
+          <nav className="navbar">
             <Link to='/'>Show Users</Link>
             <Link to='/filter'>Filter Users</Link>
           </nav>
@@ -30,6 +30,7 @@ function App() {
               <AllUsers users={users}/>
             </Route>
             <Route path='/Filter' >
+              
               <Filter setFilter={setFilter}/>
               <FilteredUsers users={users} filter={filter} setUsers={setUsers} />
             </Route>

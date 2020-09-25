@@ -11,7 +11,7 @@ export const Filter = ({setFilter})=>{
 
 
     return (
-        <div>
+        <div className='inputField'>
             <input placeholder= 'Please Enter Username'  onChange={HandleUserChange} />
             
         </div>
